@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Dashboard <i class="fa-solid fa-cloud"></i> </h1>
+            <input type="text" id="cityInput" placeholder="Search location here...">
+            <button id="searchButton">Get Weather <i class="fa-solid fa-arrow-right"></i></button>
+        </header>
+
+        <section id="currentWeather">
+            <h2 id="location"></h2>
+            <h3 id="temperature"></h3>
+            <img id="weatherIcon" alt="Weather Icon">
+            <p id="description"></p>
+        </section>
+
+        <section id="weatherOverview">
+            <h3>Today's Overview</h3>
+            <div class="overview">
+                <div>
+                    <span>Wind Speed:</span>
+                    <br>
+                    <i class="fa-solid fa-wind"></i>
+                    <p id="windSpeed"></p>
+                </div>
+                <div>
+                    <span>Humidity:</span>
+                    <br>
+                    <i class="fa-solid fa-droplet"></i>
+                    <p id="humidity"></p>
+                </div>
+                <div>
+                    <span>Pressure:</span>
+                    <br>
+                    <i class="fa-solid fa-thermometer"></i>
+                    <p id="pressure"></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
